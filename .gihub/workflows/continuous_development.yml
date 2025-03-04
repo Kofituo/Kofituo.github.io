@@ -1,0 +1,23 @@
+name: Continuous integration
+on:
+  workflow_run:
+  branches: [ main ]
+  workflows: [ Continuous integration ]
+  types: [ completed ]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Rust
+        run: rustup default nightly && rustup target add wasm32-unknown-unknown
+      - name: Install Trunk
+        run: cargo install trunk
+      - name: Build
+        run: trunk build --release
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
