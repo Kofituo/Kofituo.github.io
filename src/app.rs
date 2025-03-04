@@ -1,5 +1,6 @@
 use leptos::task::spawn_local;
 use leptos::{ev::SubmitEvent, prelude::*};
+use leptos::logging::log;
 use serde::{Deserialize, Serialize};
 use wasm_bindgen::prelude::*;
 
@@ -16,6 +17,7 @@ struct GreetArgs<'a> {
 
 #[component]
 pub fn App() -> impl IntoView {
+    log!("hit hrerer");
     let (name, set_name) = signal(String::new());
     let (greet_msg, set_greet_msg) = signal(String::new());
 
