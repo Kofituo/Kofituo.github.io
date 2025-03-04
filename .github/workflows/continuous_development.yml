@@ -1,4 +1,4 @@
-name: Continuous integration
+name: Continuous development
 on:
   workflow_run:
   branches: [ master ]
