@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install Deps
-        run: sudo apt-get update -y && sudo apt-get install libwayland-dev libwebkitgtk rust-gtk-sys-devel libproxy-webkitgtk4 webkitgtk4 libsoup libsoup-devel webkitgtk4-devel libprotobuf-dev gcc-multilib clang libclang-dev protobuf-compiler -y
+        run: sudo apt-get update -y && sudo apt-get install libwayland-dev libgtk-3-dev libprotobuf-dev gcc-multilib clang libclang-dev protobuf-compiler -y
       - name: Test
         run: cargo test --all
       - name: Format
