@@ -1,9 +1,9 @@
 name: Continuous development
 on:
   workflow_run:
-  workflows: [ Continuous integration ]
-  types:
-    - completed
+    workflows: [ Continuous integration ]
+    types:
+      - completed
 
 jobs:
   release:
