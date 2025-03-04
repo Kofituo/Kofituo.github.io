@@ -9,8 +9,8 @@ jobs:
       - name: Install Deps
         run: sudo apt-get update -y && sudo apt-get install libwayland-dev libwebkitgtk rust-gtk-sys-devel libproxy-webkitgtk4 webkitgtk4 libsoup libsoup-devel webkitgtk4-devel libprotobuf-dev gcc-multilib clang libclang-dev protobuf-compiler -y
       - name: Test
-      - run: cargo test --all
+        run: cargo test --all
       - name: Format
-      - run: cargo fmt --all -- --check
+        run: cargo fmt --all -- --check
       - name: Clippy
-      - run: cargo clippy --all -- -D warnings
+        run: cargo clippy --all -- -D warnings
