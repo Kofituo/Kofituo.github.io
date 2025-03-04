@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tauri + Leptos App</title>
+    <link rel="stylesheet" href="/styles-dab6ed7fd380e8bf.css" integrity="sha384&#x2D;xdZe&#x2F;aE4pYwucGxGmO7Ca8lgQG50Uer6&#x2B;ZILpbhSnwvwutJ5M304cskeEHKcB&#x2F;DI"/>
+    
+    
+<script type="module">
+import init, * as bindings from '/kofi-otuo-ui-10bfdb695040ede7.js';
+const wasm = await init({ module_or_path: '/kofi-otuo-ui-10bfdb695040ede7_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+  <link rel="modulepreload" href="/kofi-otuo-ui-10bfdb695040ede7.js" crossorigin="anonymous" integrity="sha384-5xemOm1M0BNYR8q3MNkSFY1YBwpux4SB9ItQFUGJdc+G/CpULw4+lyGM6BkAF/8B"><link rel="preload" href="/kofi-otuo-ui-10bfdb695040ede7_bg.wasm" crossorigin="anonymous" integrity="sha384-dsX5XbXT4d0UJidxILDKJB+chMEOsGQX9CwDzLX+6G5VdsRl9oHmigqhY6eJfUbL" as="fetch" type="application/wasm"></head>
+  <body></body>
+</html>
