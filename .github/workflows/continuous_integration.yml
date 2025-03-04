@@ -2,23 +2,15 @@ name: Continuous integration
 on: [ push ]
 
 jobs:
-  test:
+  ci:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
+      - name: Install Deps
+        run: sudo apt-get update -y && sudo apt-get install libwayland-dev libwebkitgtk rust-gtk-sys-devel libproxy-webkitgtk4 webkitgtk4 libsoup libsoup-devel webkitgtk4-devel libprotobuf-dev gcc-multilib clang libclang-dev protobuf-compiler -y
+      - name: Test
       - run: cargo test --all
-
-  format:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
+      - name: Format
       - run: cargo fmt --all -- --check
-
-  clippy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
+      - name: Clippy
       - run: cargo clippy --all -- -D warnings
