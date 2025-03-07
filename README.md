@@ -2,10 +2,10 @@
 **Built with Leptos + Tauri + Tailwind CSS**  
 *A Living Showcase of Modern Web Development Skills*
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Click_Here!-brightgreen?style=flat)](https://yourusername.github.io)  
-[![Leptos](https://img.shields.io/badge/Leptos-2.0-purple?style=flat)](https://leptos.dev)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Click_Here!-brightgreen?style=flat)](https://Kofituo.github.io)  
+[![Leptos](https://img.shields.io/badge/Leptos-0.7-purple?style=flat)](https://leptos.dev)
 [![Tauri](https://img.shields.io/badge/Tauri-2.0-blue?style=flat)](https://tauri.app)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat)](https://tailwindcss.com)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=flat)](https://tailwindcss.com)
 
 ---
 
@@ -45,30 +45,14 @@ Built with the same technologies I'll bring to your team and more:
 
 ## ⚙️ Installation
 ```bash
-# Clone with submodules (for Tauri setup)
-git clone --recurse-submodules https://github.com/yourusername/resume-portfolio
-
-# Install dependencies
-cd resume-portfolio
-cargo leptos install
-npm install
-
-# Start development
-cargo leptos watch
+todo
 ```
 
 ---
 
 ## 🖥️ Usage
 ```bash
-# Dev server (Web)
-cargo leptos watch --hot-reload
-
-# Production build
-cargo leptos build --release
-
-# Desktop app (via Tauri)
-cargo tauri dev
+todo
 ```
 
 ---
@@ -88,9 +72,11 @@ MIT Licensed - Feel free to adapt and use, but attribution appreciated!
 ---
 
 ## 🙋 Let's Connect!
-Ready to add these skills to your team?  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](your-linkedin)  
-📧 **Email**: your.email@example.com
+Ready to add these skills to your team?
+[![Upwork Kofi Otuo](https://img.shields.io/badge/Upwork-Kofi%20Otuo-blue?style=for-the-badge&logo=upwork&logoColor=black&labelColor=brightgreen)](https://www.upwork.com/freelancers/~0196d30a485de56f48?mp_source=share)
+
+
+📧 **Email**: otukof@gmail.com
 
 *"This resume builds itself - ask me about the CI/CD pipeline!"* 🔥
 

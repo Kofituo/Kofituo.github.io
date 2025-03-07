@@ -37,6 +37,8 @@ pub fn App() -> impl IntoView {
             let args = serde_wasm_bindgen::to_value(&GreetArgs { name: &name }).unwrap();
             // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
             let new_msg = invoke("greet", args).await.as_string().unwrap();
+            log::info!("nw  {}", new_msg);
+            log!("nw2  {}", new_msg);
             set_greet_msg.set(new_msg);
         });
     };
@@ -47,7 +49,7 @@ pub fn App() -> impl IntoView {
 
             <div class="row">
                 <a href="https://tauri.app" target="_blank">
-                    <img src="public/tauri.svg" class="logo tauri" alt="Tauri logo"/>
+                    <img src="public/tauri.svg" class="logo tauri scale-200" alt="Tauri logo"/>
                 </a>
                 <a href="https://docs.rs/leptos/" target="_blank">
                     <img src="public/leptos.svg" class="logo leptos" alt="Leptos logo"/>
